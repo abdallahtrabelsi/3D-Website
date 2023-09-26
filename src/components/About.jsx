@@ -26,7 +26,7 @@ const Section = styled.div`
 const Container = styled.div`
 .swiper-slide {
   width: 17rem;
-  height: 75rem;
+  
   position: relative;
  
 }

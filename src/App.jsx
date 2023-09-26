@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Who from "./components/Who";
 import Works from "./components/Works";
 import About from "./components/About";
+import Times from "./components/Times";
 
 
 
@@ -24,11 +25,10 @@ const Container = styled.div`
 function App() {
   return (
     <Container>
-      
       <Hero />
       
       <Who />
-      
+      <Times/>
       <Works />
       <About/>
       <Contact />

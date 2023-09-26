@@ -97,6 +97,7 @@ const Navbar = () => {
         
             <ListItem onClick={() => window.location.replace("#home")}>Home</ListItem>
             <ListItem onClick={() => window.location.replace("#Studio")}>Studio</ListItem>
+            <ListItem onClick={() => window.location.replace("#time")}>Time</ListItem>
             <ListItem onClick={() => window.location.replace("#About")}>About</ListItem>
             <ListItem onClick={() => window.location.replace("#Works")}>Works</ListItem>
             <ListItem onClick={() => window.location.replace("#contact")}>Contact</ListItem>
