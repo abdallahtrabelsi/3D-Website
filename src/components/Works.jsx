@@ -3,13 +3,15 @@ import styled from "styled-components";
 import Development from "./Development";
 import ProductDesign from "./ProductDesign";
 import WebDesign from "./WebDesign";
+import Illustrator from "./Illustrator";
+import Socialmedia  from "./Socialmedia";
 
 const data = [
-  "Web Design",
-  "Development",
-  "Illustration",
-  "Product Design",
-  "Social Media",
+  "Web Development",
+  "Softaware",
+  "Packaging Design",
+  "Branding",
+  "Marketing & Communication",
 ];
 
 const Section = styled.div`
@@ -19,14 +21,15 @@ const Section = styled.div`
   justify-content: center;
   position: relative;
   color: black;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
+ 
 `;
 
 const Container = styled.div`
   width: 1400px;
   display: flex;
-  justify-content: space-between;
+  
 
   @media only screen and (max-width: 768px) {
     width: 100%;
@@ -49,11 +52,11 @@ const List = styled.ul`
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 `;
 
 const ListItem = styled.li`
-  font-size: 90px;
+  font-size: 50px;
   font-weight: bold;
   cursor: pointer;
   color: transparent;
@@ -95,7 +98,7 @@ const Right = styled.div`
 `;
 
 const Works = () => {
-  const [work, setWork] = useState("Web Design");
+  const [work, setWork] = useState("Web Development");
   return (
     
 
@@ -114,13 +117,22 @@ const Works = () => {
           </List>
         </Left>
         <Right>
-          {work === "Web Design" ? (
+          
+          {work === "Web Development" ? (
             <WebDesign />
-          ) : work === "Development" ? (
+          ) : work === "Softaware" ? (
             <Development />
-          ) : (
-            <ProductDesign />
-          )}
+            
+          ) : work === "Packaging Design" ? (
+            <Illustrator /> 
+            
+          ): work === "Branding" ? ( 
+          <ProductDesign/>
+          ) : work === "Marketing & Communication" ?  (
+          <Socialmedia/>
+          ) : work ===""
+      }
+    
         </Right>
       </Container>
     </Section>

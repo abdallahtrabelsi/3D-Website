@@ -117,54 +117,50 @@ const technologies = [
 const experiences = [
   {
     title: "React.js Developer",
-    company_name: "Starbucks",
+    // company_name: "Starbucks",
     icon: starbucks,
     iconBg: "#383E56",
     date: "March 2020 - April 2021",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      
     ],
   },
   {
     title: "React Native Developer",
-    company_name: "Tesla",
+    // company_name: "Tesla",
     icon: tesla,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+     
     ],
   },
   {
     title: "Web Developer",
-    company_name: "Shopify",
+    // company_name: "Shopify",
     icon: shopify,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      
     ],
   },
   {
     title: "Full stack Developer",
-    company_name: "Meta",
+    // company_name: "Meta",
     icon: meta,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      
     ],
   },
 ];
@@ -198,9 +194,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "We Focus On You",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "we are here for you: not just for a period of time, or a specific project, but for you personally,for your entrepreneurial journey.We will spend a lot of time on you; we will do our best for your comfort and your satisfaction",
     tags: [
       {
         name: "react",
@@ -219,9 +215,9 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Simple & Clever !",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "We focus on ideas, simple ones, we believe intelligence is the key of success, we believe a teamwork can achieve the strategic goal of our work.We prefer to keep our language and our solutions friendly,simple and effective",
     tags: [
       {
         name: "react",
@@ -240,9 +236,9 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "We Are Engaged !",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "We at COSMOS NETWORK believe that excellent customer service starts with getting to know our customers. We want to know all about your vision for your company, what challenges you’re facing and what unique goals you might have.",
     tags: [
       {
         name: "nextjs",
@@ -258,6 +254,48 @@ const projects = [
       },
     ],
     image: tripguide,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "We are Flexible !",
+    description:
+      "Each project has its own specification and needs,each project has a significant schedule and specific resources; each project is a new challenge that required our team intervention and supp Therefore we have developed our own business flexible model to meet our customer needs in term of deadline,places, structure, intervention…",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Quality 'The best and nothing less'",
+    description:
+      "we are here for you: not just for a period of time, or a specific project, but for you personally,for your entrepreneurial journey.We will spend a lot of time on you; we will do our best for your comfort and your satisfaction",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrent,
     source_code_link: "https://github.com/",
   },
 ];

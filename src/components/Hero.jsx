@@ -46,11 +46,14 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 74px;
-
+  font-size: 54px;
+  font-family: 'HelveticaNeue';
+  font-weight: bold;
+  
   @media only screen and (max-width: 768px) {
     text-align: center;
   }
+
 `;
 
 const WhatWeDo = styled.div`
@@ -70,6 +73,8 @@ const Subtitle = styled.h2`
 const Desc = styled.p`
   font-size: 24px;
   color: lightgray;
+  font-family: 'HelveticaNeue';
+  font-weight: 'regular';
   @media only screen and (max-width: 768px) {
     padding: 20px;
     text-align: center;
@@ -126,13 +131,13 @@ const Hero = () => {
       <Navbar />
       <Container>
         <Left>
-          <Title>Think. Make. Solve.</Title>
+          <Title>Opportunities ... Beyond Borders</Title>
           <WhatWeDo>
             <Line src="./img/line.png" />
-            <Subtitle>What we Do</Subtitle>
+            <Subtitle>What We Do</Subtitle>
           </WhatWeDo>
           <Desc>
-            we enjoy creating delightful, human-centered digital experiences.
+            Management, Business Development,Marketing & Exportation
           </Desc>
           <Button>Learn More</Button>
         </Left>

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import Cube from "./Cube";
+import ScrollToTop from "react-scroll-to-top";
 
 const Section = styled.div`
   height: 100vh;
@@ -28,8 +29,9 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 74px;
-
+  font-size: 54px;
+  font-family: 'HelveticaNeue';
+  font-weight: 'Bold';
   @media only screen and (max-width: 768px) {
     font-size: 60px;
   }
@@ -65,6 +67,8 @@ const Subtitle = styled.h2`
 const Desc = styled.p`
   font-size: 24px;
   color: lightgray;
+  font-family: 'HelveticaNeue';
+  font-weight: 'regular';
 `;
 
 const Button = styled.button`
@@ -81,7 +85,9 @@ const Button = styled.button`
 const Who = () => {
   return (
     <Section id="Studio">
+      
       <Container>
+      <ScrollToTop smooth top="1100"/>
         <Left>
           <Canvas camera={{ position: [5, 5, 5], fov: 25 }}>
             <Suspense fallback={null}>
@@ -93,7 +99,8 @@ const Who = () => {
           </Canvas>
         </Left>
         <Right>
-          <Title>Think outside the square space</Title>
+          <Title>COSMOS 
+            network offers Consulting services</Title>
           <WhatWeDo>
             <Line src="./img/line.png" />
             <Subtitle>Who we Are</Subtitle>
@@ -102,7 +109,7 @@ const Who = () => {
             a creative group of designers and developers with a passion for the
             arts.
           </Desc>
-          <Button>See our works</Button>
+          <Button onClick={() => window.location.replace("#time")}>Our Missions</Button>
         </Right>
       </Container>
     </Section>

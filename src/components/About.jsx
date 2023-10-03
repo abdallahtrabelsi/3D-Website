@@ -18,7 +18,7 @@ import slide_image_5 from '../assets/images/img_5.jpg';
 import slide_image_6 from '../assets/images/img_6.jpg';
 import slide_image_7 from '../assets/images/img_7.jpg';
 const Section = styled.div`
-  height: 96vh;
+  height: 100vh;
   
   scroll-snap-align: center;
  
@@ -30,8 +30,6 @@ const Container = styled.div`
   position: relative;
  
 }
-
-
 `;
 
 function App() {

@@ -3,21 +3,26 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
+    
   },
   "dependencies": {
-    "@emailjs/browser": "^3.10.0",
+    "@emailjs/browser": "^3.11.0",
     "@react-three/drei": "^9.56.28",
     "@react-three/fiber": "^8.11.5",
     "@react-three/postprocessing": "^2.7.0",
+    "font-awesome": "^4.7.0",
     "framer-motion": "^10.16.4",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
+    "react-router-dom": "^6.16.0",
+    "react-scroll-to-top": "^3.0.0",
     "react-simple-maps": "^1.0.0",
     "react-slick": "^0.29.0",
     "react-tilt": "^1.0.2",

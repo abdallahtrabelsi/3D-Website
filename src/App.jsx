@@ -5,16 +5,21 @@ import Who from "./components/Who";
 import Works from "./components/Works";
 import About from "./components/About";
 import Times from "./components/Times";
+import ScrollButton from "./components/ScrollButton";
+import Experience from "./components/Experience";
+
+
+
 
 
 
 
 const Container = styled.div`
   height: 100vh;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  overflow-y: auto;
-  scrollbar-width: none;
+  overflow-x: auto;
+  scrollbar-width: auto;
   color: white;
   background: url("./img/bg.jpeg");
   &::-webkit-scrollbar{
@@ -24,17 +29,23 @@ const Container = styled.div`
 
 function App() {
   return (
+    
     <Container>
+     <ScrollButton/>
       <Hero />
       
       <Who />
-      <Times/>
+      
+      
       <Works />
       <About/>
-      <Contact />
+      <Experience/>
+      <Contact/>
       
     </Container>
+       
   );
 }
 
 export default App;
+

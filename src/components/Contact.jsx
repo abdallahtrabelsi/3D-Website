@@ -27,14 +27,14 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
-  font-weight: 200;
+  font-weight: 400;
 `;
 
 const Form = styled.form`
   width: 500px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
 
   @media only screen and (max-width: 768px) {
     width: 300px;
@@ -66,7 +66,12 @@ const Button = styled.button`
 `;
 
 const Right = styled.div`
-  flex: 1;
+flex: 1;
+
+
+
+align-items: center;
+justify-content: flex;
 
   @media only screen and (max-width: 768px) {
     display: none;
@@ -78,7 +83,13 @@ const Contact = () => {
   const [success, setSuccess] = useState(null);
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
+    emailjs.sendForm('service_frut92f', 'template_s3jrfmq', ref.current, 'nD7ASYI3nEKBeIe2a')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
 
     emailjs
       .sendForm(
